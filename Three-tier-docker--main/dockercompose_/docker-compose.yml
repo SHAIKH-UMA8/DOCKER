@@ -1,0 +1,68 @@
+services:          #default synxtax
+  frontendnginxfirst:        #naming convention for container
+    build: /opt/Three-tier-docker-/TODO/ #location of the docker file
+    ports:     #port mapping my container to host port 
+      - '80:80'  
+    container_name: TODO  #providing name to container
+    network_mode:   #providing network mode
+        bridge   
+
+  frontendnginxsecond:        #naming convention for container
+    build: /opt/Three-tier-docker-/puppy/ #location of the docker file
+    ports:     #port mapping my container to host port 
+      - '81:80'  
+    container_name: puppy  #providing name to container
+    network_mode:   #providing network mode
+        bridge
+
+  frontendnginxthird:        #naming convention for container
+    build: /opt/Three-tier-docker-/number/ #location of the docker file
+    ports:     #port mapping my container to host port 
+      - '82:80'  
+    container_name: number  #providing name to container
+    network_mode:   #providing network mode
+        bridge
+
+  frontendnginxfour:        #naming convention for container
+    build: /opt/Three-tier-docker-/season/ #location of the docker file
+    ports:     #port mapping my container to host port 
+      - '83:80'  
+    container_name: season  #providing name to container
+    network_mode:   #providing network mode
+        bridge
+
+  frontendnginxfive:        #naming convention for container
+    build: /opt/Three-tier-docker-/amazon/ #location of the docker file
+    ports:     #port mapping my container to host port 
+      - '84:80'  
+    container_name: amazon  #providing name to container
+    network_mode:   #providing network mode
+        bridge 
+
+
+  frontendnginxsix:        #naming convention for container
+    build: /opt/Three-tier-docker-/traffic/ #location of the docker file
+    ports:     #port mapping my container to host port 
+      - '85:80'  
+    container_name: traffic  #providing name to container
+    network_mode:   #providing network mode
+        bridge
+
+  frontendnginxseven:        #naming convention for container
+    build: /opt/Three-tier-docker-/VR/ #location of the docker file
+    ports:     #port mapping my container to host port 
+      - '86:80'  
+    container_name: VR  #providing name to container
+    network_mode:   #providing network mode
+        bridge
+
+  frontendnginxeight:        #naming convention for container
+    build: /opt/Three-tier-docker-/counter/ #location of the docker file
+    ports:     #port mapping my container to host port 
+      - '88:80'  
+    container_name: counter  #providing name to container
+    network_mode:   #providing network mode
+        bridge
+
+    
+
