@@ -226,3 +226,12 @@ docker rmi $(docker images -aq)
 ```
 docker rm -f $(docker ps -aq)
 ```
+## Port Mapping
+```
+docker run -p -d 80:80 nginx
+```
+ will port map with container's port with hosts port
+ ```
+docker run  -d -P nginx
+```
+will give map with container's port with hosts random port
